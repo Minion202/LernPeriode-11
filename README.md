@@ -18,10 +18,13 @@
 
 ## 14.8
 
-- [ ] Als Benutzer möchte ich meine getrunkene Wassermenge mit einem Button hinzufügen können, damit ich sehe, wie viel ich heute bereits getrunken habe.
-- [ ] Grundlegende Benutzeroberfläche mit Avalonia und XAML erstellen. Dazu gehören Titel, aktuelle Trinkmenge, Tagesziel und Buttons für verschiedene Wassermengen.
-- [ ] Lokale Speicherung vorbereiten und eine Datenstruktur für Trinkmenge, Tagesziel, Datum und einzelne Einträge erstellen.
+- [x] Als Benutzer möchte ich meine getrunkene Wassermenge mit einem Button hinzufügen können, damit ich sehe, wie viel ich heute bereits getrunken habe.
+- [x] Grundlegende Benutzeroberfläche mit Avalonia und XAML erstellen. Dazu gehören Titel, aktuelle Trinkmenge, Tagesziel und Buttons für verschiedene Wassermengen.
+- [x] Lokale Speicherung vorbereiten und eine Datenstruktur für Trinkmenge, Tagesziel, Datum und einzelne Einträge erstellen.
 
-Heute habe ich... (50-100 Wörter)
+Heute habe ich die Grundstruktur meiner Water-Tracker-App mit Avalonia und C# erstellt. Ich habe eine Benutzeroberfläche mit Titel, aktueller Trinkmenge, Tagesziel und Buttons für 250 ml und 500 ml gebaut. Die Buttons funktionieren bereits und erhöhen die Wassermenge. Zusätzlich habe ich eine Datenklasse für Wassermenge, Tagesziel und Datum erstellt und mit JSON die lokale Speicherung vorbereitet. Dabei habe ich auch mehr über MVVM, ObservableProperty, RelayCommand, Konstruktoren und Namespaces gelernt.
 
-Vergessen Sie nicht, einen ersten Code und Skizze auf github hochzuladen!
+## 21.8
+- [ ] Als Benutzer möchte ich, dass meine Trinkmenge lokal gespeichert und beim erneuten Starten der App geladen wird, damit mein Fortschritt nicht verloren geht.
+- [ ] Einen Reset für einen neuen Tag umsetzen, damit die Trinkmenge zurück auf 0 ml gesetzt wird, wenn sich das Datum ändert.
+- [ ] Eine Fortschrittsanzeige erstellen, die zeigt, wie viel Prozent des Tagesziels bereits erreicht wurden. 
