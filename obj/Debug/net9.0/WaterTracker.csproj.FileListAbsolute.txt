@@ -1,0 +1,14 @@
+/Users/mina/WaterTracker/WaterTracker/bin/Debug/net9.0/WaterTracker.deps.json
+/Users/mina/WaterTracker/WaterTracker/bin/Debug/net9.0/WaterTracker.dll
+/Users/mina/WaterTracker/WaterTracker/bin/Debug/net9.0/WaterTracker.pdb
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/WaterTracker.csproj.AssemblyReference.cache
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/Avalonia/resources
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/WaterTracker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/WaterTracker.AssemblyInfoInputs.cache
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/WaterTracker.AssemblyInfo.cs
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/WaterTracker.csproj.CoreCompileInputs.cache
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/Avalonia/WaterTracker.dll
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/Avalonia/WaterTracker.pdb
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/refint/Avalonia/WaterTracker.dll
+/Users/mina/WaterTracker/WaterTracker/obj/Debug/net9.0/ref/WaterTracker.dll
