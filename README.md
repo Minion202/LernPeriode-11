@@ -26,5 +26,14 @@ Heute habe ich die Grundstruktur meiner Water-Tracker-App mit Avalonia und C# er
 
 ## 21.8
 - [x] Als Benutzer möchte ich, dass meine Trinkmenge lokal gespeichert und beim erneuten Starten der App geladen wird, damit mein Fortschritt nicht verloren geht.
-- [ ] Einen Reset für einen neuen Tag umsetzen, damit die Trinkmenge zurück auf 0 ml gesetzt wird, wenn sich das Datum ändert.
-- [ ] Eine Fortschrittsanzeige erstellen, die zeigt, wie viel Prozent des Tagesziels bereits erreicht wurden. 
+- [x] Einen Reset für einen neuen Tag umsetzen, damit die Trinkmenge zurück auf 0 ml gesetzt wird, wenn sich das Datum ändert.
+- [x] Eine Fortschrittsanzeige erstellen, die zeigt, wie viel Prozent des Tagesziels bereits erreicht wurden. 
+
+
+Heute habe ich meine Water-Tracker-App weiterentwickelt. Ich habe die Speicherung fertig gemacht, damit die Trinkmenge auch nach einem Neustart erhalten bleibt. Ausserdem habe ich den täglichen Reset getestet und dafür mit AddDays ein anderes Datum simuliert, um zu prüfen, ob die Wassermenge an einem neuen Tag wieder auf 0 ml gesetzt wird. Danach habe ich eine Fortschrittsanzeige erstellt, die zeigt, wie viel Prozent vom Tagesziel erreicht wurden. Dabei habe ich auch besser verstanden, wie Binding und Properties in Avalonia funktionieren.
+
+## 28.8
+
+- [ ] Als Benutzer möchte ich meinen Wasserstand in einem Kreis sehen, damit ich meinen aktuellen Fortschritt visuell erkennen kann.
+- [ ] Als Benutzer möchte ich eine animierte Wasserwelle sehen, die sich mit meiner Trinkmenge verändert, damit die Fortschrittsanzeige lebendiger dargestellt wird.
+- [ ] Als Benutzer möchte ich eine übersichtliche und ansprechende Benutzeroberfläche mit passenden Farben, Buttons und einer klaren Anzeige meiner Trinkmenge haben, damit die App einfach und angenehm zu bedienen ist.
