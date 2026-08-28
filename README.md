@@ -34,6 +34,16 @@ Heute habe ich meine Water-Tracker-App weiterentwickelt. Ich habe die Speicherun
 
 ## 28.8
 
-- [ ] Als Benutzer möchte ich meinen Wasserstand in einem Kreis sehen, damit ich meinen aktuellen Fortschritt visuell erkennen kann.
-- [ ] Als Benutzer möchte ich eine animierte Wasserwelle sehen, die sich mit meiner Trinkmenge verändert, damit die Fortschrittsanzeige lebendiger dargestellt wird.
-- [ ] Als Benutzer möchte ich eine übersichtliche und ansprechende Benutzeroberfläche mit passenden Farben, Buttons und einer klaren Anzeige meiner Trinkmenge haben, damit die App einfach und angenehm zu bedienen ist.
+- [x] Als Benutzer möchte ich meinen Wasserstand in einem Kreis sehen, damit ich meinen aktuellen Fortschritt visuell erkennen kann.
+- [x] Als Benutzer möchte ich eine animierte Wasserwelle sehen, die sich mit meiner Trinkmenge verändert, damit die Fortschrittsanzeige lebendiger dargestellt wird.
+- [x] Als Benutzer möchte ich eine übersichtliche und ansprechende Benutzeroberfläche mit passenden Farben, Buttons und einer klaren Anzeige meiner Trinkmenge haben, damit die App einfach und angenehm zu bedienen ist.
+
+Heute habe ich das Design meiner Water-Tracker-App weiterentwickelt. Ich habe den Wasserstand als Kreis dargestellt, der sich je nach getrunkener Wassermenge füllt. Zusätzlich habe ich eine Wasserwelle erstellt und diese mit KeyFrames animiert. Danach habe ich die Benutzeroberfläche überarbeitet und unter anderem die Farben, Buttons und Abstände angepasst. Ausserdem habe ich einen Reset-Button eingebaut und die Anzeige der aktuellen Trinkmenge und des Tagesziels übersichtlicher gestaltet.
+
+
+
+## 04.9
+
+- [ ] Als Benutzer möchte ich meine einzelnen Trinkeinträge mit Menge und Uhrzeit sehen, damit ich nachvollziehen kann, wann und wie viel Wasser ich getrunken habe.
+- [ ] Als Benutzer möchte ich mein Tagesziel selbst ändern können, damit ich die gewünschte Wassermenge an meine Bedürfnisse anpassen kann.
+- [ ] Als Benutzer möchte ich meine vergangenen Tage in einer Übersicht sehen, damit ich meinen Trinkfortschritt über mehrere Tage verfolgen kann.
