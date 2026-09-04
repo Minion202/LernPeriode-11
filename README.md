@@ -44,6 +44,7 @@ Heute habe ich das Design meiner Water-Tracker-App weiterentwickelt. Ich habe de
 
 ## 04.9
 
-- [ ] Als Benutzer möchte ich meine einzelnen Trinkeinträge mit Menge und Uhrzeit sehen, damit ich nachvollziehen kann, wann und wie viel Wasser ich getrunken habe.
+- [x] Als Benutzer möchte ich meine einzelnen Trinkeinträge mit Menge und Uhrzeit sehen, damit ich nachvollziehen kann, wann und wie viel Wasser ich getrunken habe.
 - [ ] Als Benutzer möchte ich mein Tagesziel selbst ändern können, damit ich die gewünschte Wassermenge an meine Bedürfnisse anpassen kann.
 - [ ] Als Benutzer möchte ich meine vergangenen Tage in einer Übersicht sehen, damit ich meinen Trinkfortschritt über mehrere Tage verfolgen kann.
+- [ ] Als Benutzer möchte ich meine Trinkeinträge wieder löschen können, damit ich versehentlich hinzugefügte Einträge korrigieren kann.
