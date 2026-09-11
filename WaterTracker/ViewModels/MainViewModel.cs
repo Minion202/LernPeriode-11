@@ -16,14 +16,18 @@ public partial class MainViewModel : ViewModelBase
     [NotifyPropertyChangedFor(nameof(Progress))]
     [NotifyPropertyChangedFor(nameof(ProgressPercent))]
     [NotifyPropertyChangedFor(nameof(WaterHeight))]
+    [NotifyPropertyChangedFor(nameof(DropWaterHeight))]
     [NotifyPropertyChangedFor(nameof(WaterStatus))]
+    [NotifyPropertyChangedFor(nameof(GoalReached))]
     private int _waterAmount = 0;
 
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(Progress))]
     [NotifyPropertyChangedFor(nameof(ProgressPercent))]
     [NotifyPropertyChangedFor(nameof(WaterHeight))]
+    [NotifyPropertyChangedFor(nameof(DropWaterHeight))]
     [NotifyPropertyChangedFor(nameof(WaterStatus))]
+    [NotifyPropertyChangedFor(nameof(GoalReached))]
     private int _dailyGoal = 2000;
 
     public ObservableCollection<WaterEntry> DrinkEntries { get; } = new();
@@ -45,7 +49,15 @@ public partial class MainViewModel : ViewModelBase
     {
         get
         {
-            return Progress * 100;
+            return Math.Min(Progress * 100, 100);
+        }
+    }
+
+    public double DropWaterHeight
+    {
+        get
+        {
+            return Math.Min(Progress * 150, 150);
         }
     }
 
@@ -53,7 +65,7 @@ public partial class MainViewModel : ViewModelBase
     {
         get
         {
-            return Math.Min(Progress * 220, 220);
+            return Math.Min(Progress * 380, 380);
         }
     }
 
@@ -62,6 +74,14 @@ public partial class MainViewModel : ViewModelBase
         get
         {
             return $"{WaterAmount} / {DailyGoal} ml";
+        }
+    }
+
+    public bool GoalReached
+    {
+        get
+        {
+            return WaterAmount == DailyGoal;
         }
     }
 

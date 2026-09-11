@@ -10,8 +10,9 @@
 
     <UserControl.Styles>
 
-        <Style Selector="Path#WavePath">
+        <Style Selector="Path#DropWavePath">
             <Style.Animations>
+
                 <Animation Duration="0:0:1"
                            IterationCount="Infinite">
 
@@ -22,7 +23,7 @@
 
                     <KeyFrame Cue="50%">
                         <Setter Property="TranslateTransform.X"
-                                Value="-20"/>
+                                Value="-10"/>
                     </KeyFrame>
 
                     <KeyFrame Cue="100%">
@@ -31,10 +32,12 @@
                     </KeyFrame>
 
                 </Animation>
+
             </Style.Animations>
         </Style>
 
     </UserControl.Styles>
+
 
     <Border Background="#FFF1F5">
 
@@ -44,6 +47,7 @@
                         HorizontalAlignment="Center"
                         Margin="25">
 
+
                 <TextBlock Text="♡ WaterTracker ♡"
                            FontSize="30"
                            FontWeight="Bold"
@@ -52,7 +56,6 @@
                            Margin="0,15,0,25"/>
 
 
-                
                 <Border Background="White"
                         CornerRadius="30"
                         Padding="25">
@@ -60,135 +63,58 @@
                     <StackPanel>
 
 
-                        <Grid Width="280"
-                              Height="280"
+                        <Grid Width="300"
+                              Height="380"
                               HorizontalAlignment="Center">
 
-                        
-                            <Path Fill="White"
-                                  Stroke="#E85D7F"
-                                  StrokeThickness="4"
-                                  Data="M 35,85 L 65,25 L 100,85 Z"/>
-
-                            <Path Fill="White"
-                                  Stroke="#E85D7F"
-                                  StrokeThickness="4"
-                                  Data="M 180,85 L 215,25 L 245,85 Z"/>
-
-
+                            <Image Source="/Assets/hello-kitty-drop.png"
+                                   Width="300"
+                                   Height="380"
+                                   Stretch="Uniform"/>
                             
-                            <Border Width="240"
-                                    Height="220"
-                                    CornerRadius="100"
-                                    BorderBrush="#E85D7F"
-                                    BorderThickness="4"
-                                    Background="White"
-                                    ClipToBounds="True"
-                                    VerticalAlignment="Bottom"
-                                    HorizontalAlignment="Center">
+                            <Grid Width="65"
+                                  Height="95"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Top"
+                                  Margin="30,165,0,0">
 
-                                <Grid>
+                                <Grid.Clip>
+                                    <PathGeometry Figures="
+                                                            M47,0
+                                                            C39,13 9,52 5,82
+                                                            C2,108 18,132 47,132
+                                                            C76,132 92,108 89,82
+                                                            C85,52 55,13 47,0
+                                                            Z"/>
+                                </Grid.Clip>
 
-                                    
-                                    <Grid VerticalAlignment="Bottom"
-                                          Height="{Binding WaterHeight}">
+                                <Grid VerticalAlignment="Bottom"
+                                      Height="{Binding DropWaterHeight}">
 
-                                        <Border Background="#9DDAF5"
-                                                Margin="0,10,0,0"/>
+                                    <Border Background="#12C3E5"/>
 
-                                        <Path x:Name="WavePath"
-                                              Fill="#9DDAF5"
-                                              Height="25"
-                                              VerticalAlignment="Top"
-                                              Stretch="Fill"
-                                              Data="M 0,10 Q 50,0 100,10 Q 150,20 200,10 Q 250,0 300,10 L 300,30 L 0,30 Z">
+                                    <Path x:Name="DropWavePath"
+                                          Fill="#12C3E5"
+                                          Height="16"
+                                          VerticalAlignment="Top"
+                                          Stretch="Fill"
+                                          Data="
+                                                M 0,8
+                                                Q 24,0 47,8
+                                                Q 71,16 95,8
+                                                L 95,20
+                                                L 0,20 Z">
 
-                                            <Path.RenderTransform>
-                                                <TranslateTransform X="0"/>
-                                            </Path.RenderTransform>
+                                        <Path.RenderTransform>
+                                            <TranslateTransform X="0"/>
+                                        </Path.RenderTransform>
 
-                                        </Path>
-
-                                    </Grid>
-
-
-                                
-                                    <Canvas>
-
-                                        <Ellipse Width="12"
-                                                 Height="18"
-                                                 Fill="Black"
-                                                 Canvas.Left="65"
-                                                 Canvas.Top="95"/>
-
-                                        <Ellipse Width="12"
-                                                 Height="18"
-                                                 Fill="Black"
-                                                 Canvas.Left="160"
-                                                 Canvas.Top="95"/>
-
-                                        <Ellipse Width="18"
-                                                 Height="12"
-                                                 Fill="#FFD84A"
-                                                 Canvas.Left="110"
-                                                 Canvas.Top="115"/>
-
-                                        <Line StartPoint="25,120"
-                                              EndPoint="60,125"
-                                              Stroke="Black"
-                                              StrokeThickness="2"/>
-
-                                        <Line StartPoint="25,135"
-                                              EndPoint="60,135"
-                                              Stroke="Black"
-                                              StrokeThickness="2"/>
-
-                                        <Line StartPoint="180,125"
-                                              EndPoint="215,120"
-                                              Stroke="Black"
-                                              StrokeThickness="2"/>
-
-                                        <Line StartPoint="180,135"
-                                              EndPoint="215,135"
-                                              Stroke="Black"
-                                              StrokeThickness="2"/>
-
-                                    </Canvas>
+                                    </Path>
 
                                 </Grid>
 
-                            </Border>
-
-
-                           
-                            <Canvas Width="80"
-                                    Height="60"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Margin="0,20,10,0">
-
-                                <Ellipse Width="45"
-                                         Height="30"
-                                         Fill="#F34F6F"
-                                         Canvas.Left="0"
-                                         Canvas.Top="15"/>
-
-                                <Ellipse Width="45"
-                                         Height="30"
-                                         Fill="#F34F6F"
-                                         Canvas.Left="35"
-                                         Canvas.Top="15"/>
-
-                                <Ellipse Width="28"
-                                         Height="28"
-                                         Fill="#E63E60"
-                                         Canvas.Left="26"
-                                         Canvas.Top="16"/>
-
-                            </Canvas>
-
+                            </Grid>
                         </Grid>
-
 
                         <TextBlock Text="{Binding WaterStatus}"
                                    FontSize="22"
@@ -197,15 +123,42 @@
                                    HorizontalAlignment="Center"
                                    Margin="0,10,0,0"/>
 
+
                         <TextBlock Text="{Binding ProgressPercent, StringFormat='{}{0:0}%'}"
                                    Foreground="Gray"
                                    HorizontalAlignment="Center"/>
+                        
+                        <Border IsVisible="{Binding GoalReached}"
+                                Background="#FFE0E8"
+                                CornerRadius="18"
+                                Padding="15"
+                                Margin="0,15,0,0"
+                                HorizontalAlignment="Center">
+
+                            <StackPanel>
+
+                                <TextBlock Text="🎀 Tagesziel erreicht! 🎀"
+                                           FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="#E85D7F"
+                                           HorizontalAlignment="Center"/>
+
+                                <TextBlock Text="Du hast heute genug Wasser getrunken!"
+                                           FontSize="13"
+                                           Foreground="#A85C70"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+                        </Border>
 
 
                         <StackPanel Orientation="Horizontal"
                                     HorizontalAlignment="Center"
                                     Spacing="10"
                                     Margin="0,20,0,0">
+
 
                             <Button Content="+250 ml"
                                     Command="{Binding AddWater250Command}"
@@ -215,6 +168,7 @@
                                     Width="90"
                                     Height="45"/>
 
+
                             <Button Content="+500 ml"
                                     Command="{Binding AddWater500Command}"
                                     Background="#FF9EB5"
@@ -222,6 +176,7 @@
                                     CornerRadius="18"
                                     Width="90"
                                     Height="45"/>
+
 
                             <Button Content="Reset"
                                     Command="{Binding ResetWaterCommand}"
@@ -231,14 +186,15 @@
                                     Width="70"
                                     Height="45"/>
 
+
                         </StackPanel>
+
 
                     </StackPanel>
 
                 </Border>
 
 
-      
                 <Border Background="#FFE0E8"
                         CornerRadius="20"
                         Padding="20"
@@ -246,14 +202,17 @@
 
                     <StackPanel>
 
+
                         <TextBlock Text="♡ Tagesziel"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="#E85D7F"/>
 
+
                         <StackPanel Orientation="Horizontal"
                                     Spacing="10"
                                     Margin="0,12,0,0">
+
 
                             <NumericUpDown Value="{Binding DailyGoal}"
                                            Minimum="250"
@@ -261,19 +220,22 @@
                                            Increment="250"
                                            Width="150"/>
 
+
                             <Button Content="Speichern"
                                     Command="{Binding SaveDailyGoalCommand}"
                                     Background="#FF9EB5"
                                     Foreground="White"
                                     CornerRadius="15"/>
 
+
                         </StackPanel>
+
 
                     </StackPanel>
 
                 </Border>
 
-                
+
                 <Border Background="White"
                         CornerRadius="20"
                         Padding="20"
@@ -281,47 +243,54 @@
 
                     <StackPanel>
 
+
                         <TextBlock Text="♡ Heute getrunken"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="#E85D7F"
                                    Margin="0,0,0,10"/>
 
+
                         <ItemsControl ItemsSource="{Binding DrinkEntries}">
-
                             <ItemsControl.ItemTemplate>
-
-                                <DataTemplate x:DataType="models:WaterEntry">
+                                <DataTemplate x:DataType="models:WaterEntry"
+                                              x:CompileBindings="False">
 
                                     <Grid ColumnDefinitions="*,Auto,Auto"
-                                          Margin="0,5">
+                                          Margin="0,6">
 
                                         <TextBlock Text="{Binding AmountText}"
-                                                   Foreground="#E85D7F"/>
+                                                   Foreground="#E85D7F"
+                                                   VerticalAlignment="Center"/>
 
                                         <TextBlock Grid.Column="1"
                                                    Text="{Binding TimeText}"
-                                                   Margin="10,0"/>
+                                                   Margin="10,0"
+                                                   VerticalAlignment="Center"
+                                                   Foreground="#777777"/>
 
                                         <Button Grid.Column="2"
-                                                Content="X"
+                                                Content="✕"
                                                 CommandParameter="{Binding}"
-                                                Command="{ReflectionBinding $parent[UserControl].DataContext.DeleteEntryCommand}"/>
+                                                Command="{Binding $parent[ItemsControl].DataContext.DeleteEntryCommand}"
+                                                Background="#FFE0E8"
+                                                Foreground="#E85D7F"
+                                                CornerRadius="10"
+                                                Width="32"
+                                                Height="32"/>
 
                                     </Grid>
 
                                 </DataTemplate>
-
                             </ItemsControl.ItemTemplate>
-
                         </ItemsControl>
+
 
                     </StackPanel>
 
                 </Border>
 
 
-         
                 <Border Background="#FFE0E8"
                         CornerRadius="20"
                         Padding="20"
@@ -329,11 +298,13 @@
 
                     <StackPanel>
 
+
                         <TextBlock Text="♡ Vergangene Tage"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="#E85D7F"
                                    Margin="0,0,0,10"/>
+
 
                         <ItemsControl ItemsSource="{Binding DailyHistories}">
 
@@ -341,16 +312,49 @@
 
                                 <DataTemplate x:DataType="models:DailyHistory">
 
-                                    <Grid ColumnDefinitions="*,Auto"
-                                          Margin="0,5">
+                                    <Border Background="White"
+                                            CornerRadius="15"
+                                            Padding="12"
+                                            Margin="0,5">
 
-                                        <TextBlock Text="{Binding DateText}"/>
+                                        <Grid ColumnDefinitions="*,Auto">
 
-                                        <TextBlock Grid.Column="1"
-                                                   Text="{Binding StatusText}"
-                                                   Foreground="#E85D7F"/>
+                                            <StackPanel>
 
-                                    </Grid>
+                                                <TextBlock Text="{Binding DateText}"
+                                                           FontWeight="Bold"
+                                                           Foreground="#444444"/>
+
+                                                <TextBlock Text="{Binding StatusText}"
+                                                           FontSize="13"
+                                                           Foreground="#888888"/>
+
+                                            </StackPanel>
+
+                                            <StackPanel Grid.Column="1"
+                                                        VerticalAlignment="Center">
+
+                                                <Border IsVisible="{Binding GoalReached}"
+                                                        Background="#FFD6E2"
+                                                        CornerRadius="12"
+                                                        Padding="10,5">
+
+                                                    <TextBlock Text="🎀 Ziel erreicht"
+                                                               Foreground="#E85D7F"
+                                                               FontWeight="Bold"/>
+
+                                                </Border>
+
+                                                <TextBlock IsVisible="{Binding GoalNotReached}"
+                                                           Text="Noch nicht erreicht"
+                                                           Foreground="#999999"
+                                                           VerticalAlignment="Center"/>
+
+                                            </StackPanel>
+
+                                        </Grid>
+
+                                    </Border>
 
                                 </DataTemplate>
 
@@ -358,9 +362,11 @@
 
                         </ItemsControl>
 
+
                     </StackPanel>
 
                 </Border>
+
 
             </StackPanel>
 

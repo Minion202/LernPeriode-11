@@ -25,4 +25,20 @@ public class DailyHistory
             return $"{WaterAmount} / {DailyGoal} ml";
         }
     }
+
+    public bool GoalReached
+    {
+        get
+        {
+            return WaterAmount >= DailyGoal;
+        }
+    }
+
+    public bool GoalNotReached
+    {
+        get
+        {
+            return !GoalReached;
+        }
+    }
 }
