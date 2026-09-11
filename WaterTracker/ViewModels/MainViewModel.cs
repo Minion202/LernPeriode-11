@@ -53,7 +53,7 @@ public partial class MainViewModel : ViewModelBase
     {
         get
         {
-            return Math.Min(Progress * 260, 260);
+            return Math.Min(Progress * 220, 220);
         }
     }
 
