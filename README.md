@@ -2,6 +2,11 @@
 
 14.8 bis 11.9.2024
 
+<img width="1246" height="1434" alt="image" src="https://github.com/user-attachments/assets/a1db34a3-9940-4398-9972-471b3665fa21" />
+
+<img width="1362" height="1424" alt="image" src="https://github.com/user-attachments/assets/1ead6a43-c0c7-42af-b70b-ba187908b850" />
+
+
 ## Grob-Planung
 
 1. Erklären Sie Ihre Projekt-Idee in einem Satz, als müssen Sie einen Investor davon überzeugen.
@@ -53,7 +58,28 @@ Heute habe ich meinen WaterTracker weiterentwickelt. Ich habe einen Trinkverlauf
 
 ## 11.9
 
-- [ ] Als Benutzer möchte ich das Design meiner WaterTracker-App im Hello-Kitty-Stil gestalten, damit die App persönlicher, süsser und ansprechender aussieht.
-- [ ] Als Benutzer möchte ich eine visuelle Rückmeldung erhalten, wenn ich mein Tagesziel erreicht habe, damit ich direkt erkenne, dass ich genug Wasser getrunken habe.
-- [ ] Als Benutzer möchte ich meine Trinkhistorie übersichtlicher darstellen, damit ich schneller erkennen kann, an welchen Tagen ich mein Tagesziel erreicht habe.
+- [x] Als Benutzer möchte ich das Design meiner WaterTracker-App im Hello-Kitty-Stil gestalten, damit die App persönlicher, süsser und ansprechender aussieht.
+- [x] Als Benutzer möchte ich eine visuelle Rückmeldung erhalten, wenn ich mein Tagesziel erreicht habe, damit ich direkt erkenne, dass ich genug Wasser getrunken habe.
+- [x] Als Benutzer möchte ich meine Trinkhistorie übersichtlicher darstellen, damit ich schneller erkennen kann, an welchen Tagen ich mein Tagesziel erreicht habe.
+
+## Fertiges Projekt
+
+Mein Projekt war die Entwicklung einer WaterTracker-App mit C# und Avalonia. Das Ziel der App ist, dass man sehen kann, wie viel Wasser man am Tag bereits getrunken hat und wie viel noch bis zum Tagesziel fehlt. Man kann mit Buttons 250 ml oder 500 ml hinzufügen und das Tagesziel selbst einstellen.
+
+Zusätzlich habe ich einen Trinkverlauf eingebaut. Dort sieht man, wann und wie viel Wasser hinzugefügt wurde. Einzelne Einträge können auch wieder gelöscht werden. Vergangene Tage werden gespeichert, damit man später sehen kann, wie viel man an diesen Tagen getrunken hat und ob das Tagesziel erreicht wurde.
+
+Die Daten werden lokal gespeichert, damit sie beim Schliessen der App nicht verloren gehen. Wenn ein neuer Tag beginnt, wird der aktuelle Wasserstand automatisch zurückgesetzt und der vorherige Tag wird in der Historie gespeichert.
+
+Beim Design habe ich mich für einen Hello-Kitty-Stil entschieden. Die App verwendet deshalb vor allem Pink, Weiss und Blau. Zusätzlich habe ich eine Hello-Kitty-Grafik mit einem Wassertropfen eingebaut. Der Tropfen soll sich abhängig vom aktuellen Wasserstand mit blauer Farbe füllen.
+
+
+## Reflexion
+
+Insgesamt bin ich mit meinem Projekt zufrieden, weil ich während der Arbeit viele neue Dinge gelernt habe. Am Anfang hatte ich vor allem die Grundfunktionen wie das Hinzufügen und Zurücksetzen von Wasser. Danach habe ich das Projekt Schritt für Schritt erweitert und zum Beispiel die Speicherung, den Trinkverlauf, ein veränderbares Tagesziel und eine Historie eingebaut.
+
+Ich fand es teilweise schwierig, die verschiedenen Funktionen miteinander zu verbinden. Besonders bei der Anzeige musste ich darauf achten, dass sich die Werte automatisch aktualisieren, wenn Wasser hinzugefügt oder gelöscht wird. Dabei habe ich besser verstanden, wie Bindings, Properties und Commands in Avalonia und MVVM funktionieren.
+
+Am meisten Probleme hatte ich mit dem Wassertropfen im Hello-Kitty-Design. Meine Idee war, dass sich der Tropfen passend zum Fortschritt von unten nach oben mit Wasser füllt. Die Funktion selbst funktioniert bereits, aber die Füllung passt noch nicht ganz genau zur Form und Position des Tropfens. Ich möchte noch herausfinden, warum die Maske beziehungsweise die Grösse und Position nicht genau mit dem Bild übereinstimmt. Diesen Teil möchte ich später noch verbessern, damit die Wasserfüllung genau innerhalb des Tropfens angezeigt wird.
+
+Wenn ich das Projekt nochmals machen würde, würde ich wahrscheinlich früher planen, wie das Design und die einzelnen Elemente aufgebaut werden sollen. Dadurch hätte ich beim Wassertropfen weniger verschiedene Lösungen ausprobieren müssen. Trotzdem finde ich, dass ich durch diese Probleme auch viel gelernt habe, weil ich verschiedene Möglichkeiten testen und Fehler selbst suchen musste. Insgesamt habe ich mein ursprüngliches Projekt deutlich erweitert und bin mit dem Ergebnis zufrieden.
 
