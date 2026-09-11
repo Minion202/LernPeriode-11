@@ -53,7 +53,17 @@ Heute habe ich meinen WaterTracker weiterentwickelt. Ich habe einen Trinkverlauf
 
 ## 11.9
 
-- [ ] Als Benutzer möchte ich das Design meiner WaterTracker-App im Hello-Kitty-Stil gestalten, damit die App persönlicher, süsser und ansprechender aussieht.
-- [ ] Als Benutzer möchte ich eine visuelle Rückmeldung erhalten, wenn ich mein Tagesziel erreicht habe, damit ich direkt erkenne, dass ich genug Wasser getrunken habe.
-- [ ] Als Benutzer möchte ich meine Trinkhistorie übersichtlicher darstellen, damit ich schneller erkennen kann, an welchen Tagen ich mein Tagesziel erreicht habe.
+- [x] Als Benutzer möchte ich das Design meiner WaterTracker-App im Hello-Kitty-Stil gestalten, damit die App persönlicher, süsser und ansprechender aussieht.
+- [x] Als Benutzer möchte ich eine visuelle Rückmeldung erhalten, wenn ich mein Tagesziel erreicht habe, damit ich direkt erkenne, dass ich genug Wasser getrunken habe.
+- [x] Als Benutzer möchte ich meine Trinkhistorie übersichtlicher darstellen, damit ich schneller erkennen kann, an welchen Tagen ich mein Tagesziel erreicht habe.
+
+## Fertiges Projekt
+
+Mein Projekt war die Entwicklung einer WaterTracker-App mit C# und Avalonia. Das Ziel der App ist, dass man sehen kann, wie viel Wasser man am Tag bereits getrunken hat und wie viel noch bis zum Tagesziel fehlt. Man kann mit Buttons 250 ml oder 500 ml hinzufügen und das Tagesziel selbst einstellen.
+
+Zusätzlich habe ich einen Trinkverlauf eingebaut. Dort sieht man, wann und wie viel Wasser hinzugefügt wurde. Einzelne Einträge können auch wieder gelöscht werden. Vergangene Tage werden gespeichert, damit man später sehen kann, wie viel man an diesen Tagen getrunken hat und ob das Tagesziel erreicht wurde.
+
+Die Daten werden lokal gespeichert, damit sie beim Schliessen der App nicht verloren gehen. Wenn ein neuer Tag beginnt, wird der aktuelle Wasserstand automatisch zurückgesetzt und der vorherige Tag wird in der Historie gespeichert.
+
+Beim Design habe ich mich für einen Hello-Kitty-Stil entschieden. Die App verwendet deshalb vor allem Pink, Weiss und Blau. Zusätzlich habe ich eine Hello-Kitty-Grafik mit einem Wassertropfen eingebaut. Der Tropfen soll sich abhängig vom aktuellen Wasserstand mit blauer Farbe füllen.
 
