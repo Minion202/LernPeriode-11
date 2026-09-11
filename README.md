@@ -45,6 +45,15 @@ Heute habe ich das Design meiner Water-Tracker-App weiterentwickelt. Ich habe de
 ## 04.9
 
 - [x] Als Benutzer möchte ich meine einzelnen Trinkeinträge mit Menge und Uhrzeit sehen, damit ich nachvollziehen kann, wann und wie viel Wasser ich getrunken habe.
-- [ ] Als Benutzer möchte ich mein Tagesziel selbst ändern können, damit ich die gewünschte Wassermenge an meine Bedürfnisse anpassen kann.
-- [ ] Als Benutzer möchte ich meine vergangenen Tage in einer Übersicht sehen, damit ich meinen Trinkfortschritt über mehrere Tage verfolgen kann.
-- [ ] Als Benutzer möchte ich meine Trinkeinträge wieder löschen können, damit ich versehentlich hinzugefügte Einträge korrigieren kann.
+- [x] Als Benutzer möchte ich mein Tagesziel selbst ändern können, damit ich die gewünschte Wassermenge an meine Bedürfnisse anpassen kann.
+- [x] Als Benutzer möchte ich meine vergangenen Tage in einer Übersicht sehen, damit ich meinen Trinkfortschritt über mehrere Tage verfolgen kann.
+- [x] Als Benutzer möchte ich meine Trinkeinträge wieder löschen können, damit ich versehentlich hinzugefügte Einträge korrigieren kann.
+
+Heute habe ich meinen WaterTracker weiterentwickelt. Ich habe einen Trinkverlauf eingebaut, in dem die einzelnen Trinkeinträge mit der Menge und Uhrzeit angezeigt werden. Ausserdem kann das Tagesziel angepasst werden und vergangene Tage werden in einer Übersicht gespeichert. Zusätzlich habe ich eine Funktion eingebaut, mit der falsch hinzugefügte Trinkeinträge wieder gelöscht werden können. Zum Schluss habe ich die Änderungen mit Git gespeichert und auf GitHub hochgeladen.
+
+## 11.9
+
+- [ ] Als Benutzer möchte ich das Design meiner WaterTracker-App im Hello-Kitty-Stil gestalten, damit die App persönlicher, süsser und ansprechender aussieht.
+- [ ] Als Benutzer möchte ich eine visuelle Rückmeldung erhalten, wenn ich mein Tagesziel erreicht habe, damit ich direkt erkenne, dass ich genug Wasser getrunken habe.
+- [ ] Als Benutzer möchte ich meine Trinkhistorie übersichtlicher darstellen, damit ich schneller erkennen kann, an welchen Tagen ich mein Tagesziel erreicht habe.
+
